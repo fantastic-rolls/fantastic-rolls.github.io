@@ -1,0 +1,68 @@
+.inria-sans-light {
+    font-family: "Inria Sans", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .inria-sans-regular {
+    font-family: "Inria Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .inria-sans-bold {
+    font-family: "Inria Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .inria-sans-light-italic {
+    font-family: "Inria Sans", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .inria-sans-regular-italic {
+    font-family: "Inria Sans", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .inria-sans-bold-italic {
+    font-family: "Inria Sans", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  body {
+    font-family: "Inria Sans", serif;
+    background: #191738;
+    background: linear-gradient(135deg, #191738, #582b75);
+    color: #F1F6F7;
+    margin-bottom: 6em;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  section {
+    margin-bottom: 2em;
+  }
+
+  .fantastic-hero {
+    margin-top: 2em;
+  }
+
+  .fantastic-media {
+    margin-bottom: 2em;
+  }
+
+  .fantastic-button {
+    color: #191738;
+    font-style: italic;
+    font-size: 1.2em;
+    background-color: #F1F6F7;
+  }
