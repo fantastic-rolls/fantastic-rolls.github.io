@@ -16,7 +16,9 @@ def last_youtube():
         "https://www.youtube.com/feeds/videos.xml?channel_id=UCzlNDwukhzL9Q6OTTiBl1_Q&key=PLxC6HqP9bTs0VlgWLUs1SSMBEbctB62yn"
     )
     episodes = [e for e in feed.entries if e.title.startswith(TITLE)]
-    return episodes[0].link if episodes else None
+    if not episodes:
+        return None
+    return episodes[0].id.split(":")[-1]
 
 
 variables = {"CASTOPOD_URL": last_castopod, "YOUTUBE_URL": last_youtube}
@@ -29,7 +31,6 @@ with open("index.in.html", encoding="utf8") as input:
                 variable = match.group(1)
                 if variable in variables:
                     value = variables[variable]()
-                    print(match.group(0))
                     if value:
                         line = line.replace(match.group(0), value)
             output.write(line)
